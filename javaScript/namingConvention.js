@@ -37,3 +37,14 @@ let user1;
 let user_$;
 
 // names must be meaningful such as userName, neither x nor abc.
+
+let userOfficialName = "Salman";
+let userAge = 9;
+
+if (userAge == 18) {
+  console.log("hello hero");
+} else if (userAge == 19) {
+  console.log("19 ki umar");
+} else {
+  console.log("yo above 19");
+}
