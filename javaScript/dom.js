@@ -33,3 +33,22 @@ for (let ele of data) {
   li.innerText = ele;
   ul.append(li);
 }
+
+// we will going to prefer addEVLis over onClick types of event handlers
+// as they replace each other,
+// addEventListener
+const form = document.querySelector("form");
+const range = document.querySelector("#range");
+const submit = document.querySelector("#submit");
+
+const para = document.createElement("p");
+
+range.addEventListener("input", (e) => {
+  e.preventDefault();
+  console.log(e.target.value, "e.target.value");
+  console.log(e);
+
+  para.innerText = range.value;
+  form.append(para);
+});
+console.log(range, submit, form);
